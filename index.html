@@ -12,24 +12,46 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <div class="api-section">
-        <h1>
-            Part 1: Random Dog Generator
-        </h1>
-        <div class="api-content">
-            [INSERT RANDOM DOG GENERATOR HERE]
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col"> 
+             <div class="card" style="width: 18rem;">
+                <img src="" alt = "dog picture" width = "400px" class="card-img-top" alt="dog picture">
+                <div class="card-body">
+                    <h4 class="card-title">Part 1:</h4>
+                    <h5 class="card-title">Random Dog Generator</h5>
+                    <p class="card-text">Click on the button to cycle in a new picture.</p>
+                    <button type = "button" id = "dogButton" class="btn btn-primary">New Dog Pic</button>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="api-section">
-        <h1>
-            Part 2: Weather App
-        </h1>
-        <div class="api-content">
-            [INSERT WEATHER APP HERE]
+   
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                 <img src="https://media.istockphoto.com/id/468526566/photo/severe-weather-map-forecast.jpg?s=612x612&w=is&k=20&c=tXFSEWhnEQBzs5KFRnZqSTkiLnp6QjCKSqtU_IQ5fB4=" alt = "forecast picture" width-max = "400px" height-max = "400px" class="card-img-top" alt="dog picture">
+                 <div class="card-body">
+                    <h4 class="card-title">Part 2:</h4>
+                    <h5 class="card-title">Local Weather App</h5>
+                    <p class="card-text" id="forecast">Enter your city then click submit to find out today's weather.</p>
+                    <form id="weatherForm">
+                        <label>City</label>
+                        <input type="text" id = "yourCity" autocomplete="off" placeholder="City">
+                        <input type="submit" name="" id="">
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+   
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                 <img src="https://cdn2.vectorstock.com/i/1000x1000/88/91/crosshairs-vector-618891.jpg" alt = "crosshairs picture" width-max = "400px" height-max = "400px" class="card-img-top" alt="dog picture">
+                 <div class="card-body">
+                    <h4 class="card-title">Part 3:</h4>
+                    <h5 class="card-title">Where are you?</h5>
+                    <p class="card-text" id="yourLocation">Please click the button to find out.</p>
+                    <input type = "button" id = "findMeButton" class="btn btn-primary" value="Find Me">
+                </div>
+            </div>
+        </div>
 
     <script src="main.js"></script>
 </body>
