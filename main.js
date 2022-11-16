@@ -22,10 +22,10 @@ function fetchDogPic(){
 
 //code for retrieving weather data
 let city = document.querySelector("#yourCity")
-let weatherForm = document.querySelector("#weatherForm")
+let weatherButton = document.querySelector("#weatherButton")
 let forecast = document.querySelector("#forecast")
 
-weatherForm.addEventListener("submit", function(event){
+weatherButton.addEventListener("click", function(event){
     event.preventDefault();
     myForecast(yourCity.value);
     yourCity.value = "";
